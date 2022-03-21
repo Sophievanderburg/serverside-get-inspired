@@ -14,9 +14,11 @@ app.set('views', 'views');
 app.use(express.static(__dirname + '/public'));
 
 
-app.get('/', (req, res) => {
+app.get("/", renderPagina)
+
+function renderPagina (req, res){
   res.render('index')
-})
+}
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
