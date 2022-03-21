@@ -1,0 +1,32 @@
+{
+    "name": "serverside-get-inspired",
+    "version": "1.0.0",
+    "description": "This is a project for the minor Web design & development",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "hoi": "echo 'Hoi'",
+        "dev": "nodemon server.js",
+        "start": "node server.js"
+    },
+    "engines": {
+        "node": "14.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "\"Sophie van der Burg\"",
+    "license": "MIT",
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
