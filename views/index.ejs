@@ -7,7 +7,7 @@
     </header>
     <main>
         <h2>Hi there!</h2>
-        <p>We haven't found any quotes for you yet...</p>
+        <p>Here are some quotes for you!</p>
         <button>Filter</button>
 
         <ul>
@@ -32,14 +32,37 @@
             <form class="show"> <!-- Filter for tags -->
                 <h3>What subjects are you interested in?</h3>
                 <section>
-                    <!-- There will load a checkbox list here through js -->
+                    <%  let tags = data.map(data =>{
+                        return data.tags.split(',')
+                    })
+
+                    let allTags = [...new Set(tags.flat(1))]
+
+                    allTags.sort()
+
+                    allTags.forEach(data => { %>   
+                        <div>
+                            <input type="checkbox" id="${data}">
+                            <label for="<%- data %>"> <%- data %></label>
+                        </div>
+                    <% }) %>
                 </section>
                 <button>Show the quotes!</button>
             </form>
             <form> <!-- Filter for author -->
                 <h3>What authors do you like?</h3>
                 <section>
-                    <!-- There will load a checkbox list here through js -->
+                    <% 
+                    let auhtors = data.map(function(quote) { return quote.name })
+                    
+                    let allAuhtor = [...new Set(auhtors.flat(1))]
+
+                    allAuhtor.forEach(data => { %>   
+                        <div>
+                            <input type="checkbox" id="${data}">
+                            <label for="<%- data %>"> <%- data %></label>
+                        </div>
+                    <% }) %>
                 </section>
                 <button>Show the quotes!</button>
             </form>

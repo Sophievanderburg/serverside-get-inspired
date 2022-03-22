@@ -21,6 +21,7 @@ function renderPagina (req, res){
     return response.json()
   })
   .then((jsonData) =>{
+    jsonData.data = jsonData.data.slice(0,-5)
     res.render('index', {
       data: jsonData.data,
       pageTitle: "Quotes"
