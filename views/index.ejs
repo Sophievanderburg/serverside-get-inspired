@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<%- include('./partials/head') %>
 
-    <link rel="stylesheet" href="https://use.typekit.net/unv1rqq.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script type="module" src="script.js"> </script>
-
-    <title>SPA</title>
-</head>
-<body>
     <header>
         <h1>GET <span>INSPIRED</span></h1>
         <p>Need some inspiration to get through the day? We got you!</p>
@@ -22,9 +11,15 @@
         <button>Filter</button>
 
         <ul>
-
-            
-
+            <% data.forEach(function(quote) { %>   
+                <li> 
+                    <p> <%- quote.text %></p>
+                    <div>
+                        <img src='<%- quote.avatar %>' alt='Profielfoto' onerror="this.src='./images/placeholder.jpeg'">
+                        <h3><%- quote.name %></h3>
+                    </div
+                </li>
+            <% }) %>
         </ul>
 
         <section>
@@ -53,5 +48,4 @@
     <footer>
 
     </footer>
-</body>
-</html>
+<%- include('./partials/foot') %>
