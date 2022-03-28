@@ -57,6 +57,8 @@
                     
                     let allAuhtor = [...new Set(auhtors.flat(1))]
 
+                    allAuhtor.sort()
+
                     allAuhtor.forEach(data => { %>   
                         <div>
                             <input type="checkbox" id="${data}">
