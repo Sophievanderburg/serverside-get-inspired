@@ -51,8 +51,6 @@ function zoeken(req,res){
           } 
       });
     })
-    console.log('data is:')
-    console.log(data)
 
     res.render('index', {
       data: jsonData.data,
@@ -60,7 +58,6 @@ function zoeken(req,res){
       pageTitle: "Quotes"
     })
   })
-  
 }
 
 app.listen(port, () => {
