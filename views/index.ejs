@@ -11,7 +11,7 @@
         <button>Filter</button>
 
         <ul>
-            <% data.forEach(function(quote) { %>   
+            <% data2.forEach(function(quote) { %>   
                 <li> 
                     <p> <%- quote.text %></p>
                     <div>
@@ -29,7 +29,7 @@
                 <button class="selected">Subjects</button>
                 <button>Author</button>
             </div>
-            <form class="show"> <!-- Filter for tags -->
+            <form class="show" method="get" action="/search"> <!-- Filter for tags -->
                 <h3>What subjects are you interested in?</h3>
                 <section>
                     <%  let tags = data.map(data =>{
@@ -42,14 +42,15 @@
 
                     allTags.forEach(data => { %>   
                         <div>
-                            <input type="checkbox" id="${data}">
+                            <input type="checkbox" id="<%- data %>" name="query" value="<%- data %>">
                             <label for="<%- data %>"> <%- data %></label>
                         </div>
                     <% }) %>
+                    <button>Show the quotes!</button>
                 </section>
-                <button>Show the quotes!</button>
+                
             </form>
-            <form> <!-- Filter for author -->
+            <form method="get" action="/search"> <!-- Filter for author -->
                 <h3>What authors do you like?</h3>
                 <section>
                     <% 
@@ -61,7 +62,7 @@
 
                     allAuhtor.forEach(data => { %>   
                         <div>
-                            <input type="checkbox" id="${data}">
+                            <input type="checkbox" id="<%- data %>" name="query" value="<%- data %>" >
                             <label for="<%- data %>"> <%- data %></label>
                         </div>
                     <% }) %>

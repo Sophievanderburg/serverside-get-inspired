@@ -37,13 +37,3 @@ authorButton.addEventListener('click', showAuthorForm);
 
 showSectionButton.addEventListener('click', showOrHideSection);
 hideSectionButton.addEventListener('click', showOrHideSection);
-
-showTagsQuotesButton.addEventListener('click', showOrHideSection);
-showTagsQuotesButton.addEventListener('click', function(event){
-    event.preventDefault()
-  });
-
-showAuthorsQuotesButton.addEventListener('click', showOrHideSection);
-showAuthorsQuotesButton.addEventListener('click', function(event){
-    event.preventDefault()
-  });

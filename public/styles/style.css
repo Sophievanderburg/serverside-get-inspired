@@ -255,7 +255,7 @@ main > section > form.show{
     display: block;
 }
 
-main > section > form > button{
+main > section > form button{
     text-decoration: none;
 
     padding: 0.5em 1em;
@@ -266,15 +266,15 @@ main > section > form > button{
     margin-top: 1em;
 }
 
-main > section > form > button:hover{
+main > section > form button:hover{
     background-color: #2b4175;
 }
 
-main > section > form > button:active{
+main > section > form button:active{
     background-color: #23355e;
 }
 
-main > section > form > button:focus{
+main > section > form button:focus{
     border: 2px solid #1c9a8d;
 }
 
