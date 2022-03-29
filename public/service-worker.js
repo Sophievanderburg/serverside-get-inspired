@@ -29,18 +29,20 @@ self.addEventListener('fetch', (event) => {
           .then(cache => cache.match(event.request.url))
       )
     } else if (isHtmlGetRequest(event.request)) {
-      console.log('html get request', event.request.url)
+      console.log('html get request', event.request.headers.get('accept'))
       // generic fallback
       event.respondWith(
-  
-        caches.open('html-cache')
-          .then(cache => cache.match(event.request.url))
-          .then(response => response ? response : fetchAndCache(event.request, 'html-cache'))
-          .catch(e => {
-            return caches.open(CORE_CACHE_VERSION)
-              .then(cache => cache.match('/offline'))
-          })
-      )
+            caches.open('html-cache')
+            .then(cache => cache.match(event.request.url))
+            .then(response => response ? response : fetchAndCache(event.request, 'html-cache'))
+            .catch(e => {
+
+
+                console.log('failed to fetch', e)
+                return caches.open(CORE_CACHE_VERSION)
+                .then(cache => cache.match('/offline'))
+            })
+        )
     }
 });
 
@@ -61,7 +63,7 @@ function fetchAndCache(request, cacheName) {
 
 // Checks if a request is a GET and HTML request
 function isHtmlGetRequest(request) {
-    return request.method === 'GET' && (request.headers.get('accept') !== null && request.headers.get('accept').includes('text/html') > -1);
+    return request.method === 'GET' && (request.headers.get('accept') !== null && request.headers.get('accept').includes('text/html'));
 }
 
 //Checks if a request is a core GET request
