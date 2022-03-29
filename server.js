@@ -15,6 +15,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get("/", renderPagina)
 app.get("/search", zoeken)
+app.get("/offline", renderOffline)
 
 
 /*--------------------- Functions ------------------------- */
@@ -59,6 +60,14 @@ function zoeken(req,res){
     })
   })
 }
+
+
+function renderOffline (req, res){
+  res.render('offline', {
+    pageTitle: "Offline"
+  })
+}
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

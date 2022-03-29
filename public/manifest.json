@@ -1,0 +1,17 @@
+{
+    "name": "Get isnpired: Quotes",
+    "short_name": "Get inspired",
+    "start_url": "/",
+    "theme_color": "#3D5CA6",
+    "icons" : [
+        {
+            "src": "/images/text-balloon.png",
+            "type": "image/png",
+            "sizes": "1890x1890"
+          }
+    ],
+   
+    "display": "standalone",
+    "scope": "/",
+    "description": "This is a webapp to get inpsired with quotes"
+  }
