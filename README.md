@@ -41,6 +41,7 @@ The two forms can not be combined when you are filtering. So you can use the sub
 ## Practical information
 ### Activity diagram
 This is a diagram of how the SPA works <br>
+<img width="1187" alt="Screenshot 2022-04-04 at 13 44 15" src="https://user-images.githubusercontent.com/70577898/161536923-870ea3e1-fa35-4477-883b-91559266869e.png">
 
 
 
