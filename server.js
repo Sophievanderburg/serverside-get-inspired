@@ -32,11 +32,18 @@ function renderPagina (req, res){
       pageTitle: "Quotes"
     })
   })
+  .catch((err)=>{
+    res.render('error', {
+      pageTitle: "Error"
+    })
+  })
 }
 
 function zoeken(req,res){
   let checked = req.query.query
   let data = []
+
+  console.log(checked)
 
   fetch('https://quote.api.fdnd.nl/v1/quote/')
   .then(function(response){
@@ -47,9 +54,12 @@ function zoeken(req,res){
 
     checked.forEach(input => {
       jsonData.data.forEach(quote => {
-          if(quote.tags.includes(input)) {
-              data.push(quote);
-          } 
+        if(quote.tags.includes(input)) {
+          data.push(quote)
+        } 
+        else if(quote.name.includes(input)) {
+          data.push(quote)
+        }
       });
     })
 
