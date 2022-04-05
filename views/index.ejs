@@ -3,7 +3,7 @@
     <header>
         <h1>GET <span>INSPIRED</span></h1>
         <p>Need some inspiration to get through the day? We got you!</p>
-        <a>⇩</a>
+        <button>⇩</button>
     </header>
     <main id='main'>
        
@@ -16,7 +16,7 @@
                 <li> 
                     <p> <%- quote.text %></p>
                     <div>
-                        <img src='<%- quote.avatar %>' alt='Profielfoto' onerror="this.src='./images/placeholder.jpeg'">
+                        <img src='<%- quote.avatar %>' alt='Profielfoto' sizes="10vw" onerror="this.src='./images/placeholder.jpeg'">
                         <h3><%- quote.name %></h3>
                     </div
                 </li>

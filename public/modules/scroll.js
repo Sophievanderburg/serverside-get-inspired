@@ -1,4 +1,4 @@
-export const scrollButton = document.querySelector('header a')
+export const scrollButton = document.querySelector('header button')
 export const main = document.querySelector('main')
 
 export function scrollFunction () {

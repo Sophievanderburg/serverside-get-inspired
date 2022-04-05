@@ -59,9 +59,11 @@ header p{
     max-width: 427.5px;
 }
 
-header a{
+header button{
     color: black;
     text-decoration: none;
+    border: none;
+    background-color: transparent;
     font-size: 32px;
     height: 5vh;
     width: 100%;
@@ -73,7 +75,7 @@ header a{
     transition: 0.5s;
 }
 
-header a.draai{
+header button.draai{
     transform: rotate(180deg);
 }
 

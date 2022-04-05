@@ -1,5 +1,6 @@
 const express = require('express')
 const fetch = require('node-fetch')
+const compression = require('compression')
 
 const app = express()
 const port = 4567
@@ -10,8 +11,8 @@ app.set('view engine', 'ejs');
 // Tell the views engine/ejs where the template files are stored (Settingname, value)
 app.set('views', './views');
 
-app.use(express.static(__dirname + '/public'));
-
+app.use(express.static(__dirname + '/public'))
+app.use(compression())
 
 app.get("/", renderPagina)
 app.get("/search", zoeken)
