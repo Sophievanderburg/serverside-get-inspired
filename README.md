@@ -1,7 +1,5 @@
 #  Welcome to the Get Inspired repo! ✨
-<img width="250" alt="Screenshot 2022-03-08 at 16 23 48" src="https://user-images.githubusercontent.com/70577898/157280932-53b589f3-99c8-4c2b-a493-cbbce4da3274.png">
-<img width="250" alt="Screenshot 2022-03-08 at 16 23 53" src="https://user-images.githubusercontent.com/70577898/157280951-3e1656e3-23c8-45e4-b540-359b84673550.png">
-<img width="250" alt="Screenshot 2022-03-08 at 16 24 06" src="https://user-images.githubusercontent.com/70577898/157280976-c4f7b053-7577-4b9c-a782-a713b5725931.png">
+<img width="250" alt="Screenshot 2022-03-08 at 16 23 48" src="https://user-images.githubusercontent.com/70577898/157280932-53b589f3-99c8-4c2b-a493-cbbce4da3274.png"> <img width="250" alt="Screenshot 2022-03-08 at 16 23 53" src="https://user-images.githubusercontent.com/70577898/157280951-3e1656e3-23c8-45e4-b540-359b84673550.png"> <img width="250" alt="Screenshot 2022-03-08 at 16 24 06" src="https://user-images.githubusercontent.com/70577898/157280976-c4f7b053-7577-4b9c-a782-a713b5725931.png">
 
 ## Table of content
 - About the SPA
@@ -40,19 +38,18 @@ The two forms can not be combined when you are filtering. So you can use the sub
 
 ## Practical information
 ### Activity diagram
-This is a diagram of how the SPA works <br>
 <img width="1187" alt="Screenshot 2022-04-04 at 13 44 15" src="https://user-images.githubusercontent.com/70577898/161536923-870ea3e1-fa35-4477-883b-91559266869e.png">
 
-
+### How the service-worker works
+<img width="1145" alt="Screenshot 2022-04-08 at 10 12 32" src="https://user-images.githubusercontent.com/70577898/162394341-4b67161b-6528-4325-9991-97123103c70d.png">
 
 ### How to install
 Firstly, make sure you have Git, Node and a working terminal on your computer. Secondly, if you do not use Github desktop yet, stop with what you are doing and download it now. I've spent to much time messing around in the terminal. So that is a little hint from me to you. 😄 <br> 
 Now it is time for the code. If you are at the code-tab of this Github repo, you see a green button with the text 'code' in it. Click on that button and click on the option 'open with Github Desktop'. This way, it clones my repo on your computer. <br>
 Once you have the code on your computer open the terminal and install all the dependencies by running ``npm install``.<br>
 
-
 ### How to Use
-Before you can see the SPA on your computer you need to start the server. You can do this by running ``npm run dev`` in the terminal. Once you've done this you can open http://localhost:4567/ in you browser.
+Before you can see the SPA on your computer you need to start the server. You can do this by running ``npm run dev`` in the terminal. Once you've done this you can open http://localhost:4567/ in your browser.
 
 
 ### The API
