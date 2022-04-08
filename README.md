@@ -46,7 +46,7 @@ The two forms can not be combined when you are filtering. So you can use the sub
 ### How to install
 Firstly, make sure you have Git, Node and a working terminal on your computer. Secondly, if you do not use Github desktop yet, stop with what you are doing and download it now. I've spent to much time messing around in the terminal. So that is a little hint from me to you. 😄 <br> 
 Now it is time for the code. If you are at the code-tab of this Github repo, you see a green button with the text 'code' in it. Click on that button and click on the option 'open with Github Desktop'. This way, it clones my repo on your computer. <br>
-Once you have the code on your computer open the terminal and install all the dependencies by running ``npm install``.<br>
+Once you have the code on your computer open the terminal and install all the dependencies by running ``npm install``. If it <br>
 
 ### How to Use
 Before you can see the SPA on your computer you need to start the server. You can do this by running ``npm run dev`` in the terminal. Once you've done this you can open http://localhost:4567/ in your browser.
