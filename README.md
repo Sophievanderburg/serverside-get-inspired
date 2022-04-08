@@ -69,3 +69,13 @@ Here is an example of what an object looks like:
 "avatar":"<url to a picture of the author>"}
 ```
 
+### Optimalisation
+Things i used: 
+* [express-minify package](https://www.npmjs.com/package/express-minify) 
+* [compression package](https://www.npmjs.com/package/compression)
+* SEO things like META-tags
+* `size=""` for images
+
+ ❗ Lighthouse said that the images are on the bigger size. So I researched ways to make them smaller like `srcset=""` & `sizes=""`. But I can not use them, because the API does not support it. That is because the API has links from the image on another site. There is no way to make them smaller. That is why the performance is not 100.  
+ 
+ 
