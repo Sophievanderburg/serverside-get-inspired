@@ -40,7 +40,11 @@ The two forms can not be combined when you are filtering. So you can use the sub
 ### Activity diagram
 <img width="1187" alt="Screenshot 2022-04-04 at 13 44 15" src="https://user-images.githubusercontent.com/70577898/161536923-870ea3e1-fa35-4477-883b-91559266869e.png">
 
-### How the service-worker works
+### Service worker
+The service worker checks whether the user has an internet connection. When a request is made, the service worker stores the 'CORE_ASSETS' in the browser's cache memory 'v3'. The CORE_ASSETS contains the offline page and the styling file. This allows the service worker to still show the offline page with associated styling when there is no internet connection. <br><br>
+If there is internet connection, the service worker caches the rendered content in 'html cache'. If the user later returns to de SPA without internet, he can see still the pages he has already visited.
+
+#### How the service worker works
 <img width="1145" alt="Screenshot 2022-04-08 at 10 12 32" src="https://user-images.githubusercontent.com/70577898/162394341-4b67161b-6528-4325-9991-97123103c70d.png">
 
 ### How to install
