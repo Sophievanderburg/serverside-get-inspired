@@ -91,6 +91,7 @@ Now the loading is quite fast!<br>
 
 
 ## Client side vs Server side rendering
+<img width="100%" alt="Schermafbeelding 2022-05-19 om 15 00 18" src="https://user-images.githubusercontent.com/70577898/169299270-c6abe99d-a628-4991-b359-ac0d587d4b6e.png"><br>
 ### Client side rendering
 
 ### Server side rendering
