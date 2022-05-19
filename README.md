@@ -1,5 +1,5 @@
 #  Welcome to the Get Inspired repo! ✨
-<img width="250" alt="Screenshot 2022-03-08 at 16 23 48" src="https://user-images.githubusercontent.com/70577898/157280932-53b589f3-99c8-4c2b-a493-cbbce4da3274.png"> <img width="250" alt="Screenshot 2022-03-08 at 16 23 53" src="https://user-images.githubusercontent.com/70577898/157280951-3e1656e3-23c8-45e4-b540-359b84673550.png"> <img width="250" alt="Screenshot 2022-03-08 at 16 24 06" src="https://user-images.githubusercontent.com/70577898/157280976-c4f7b053-7577-4b9c-a782-a713b5725931.png">
+<img width="30%" alt="Screenshot 2022-03-08 at 16 23 48" src="https://user-images.githubusercontent.com/70577898/157280932-53b589f3-99c8-4c2b-a493-cbbce4da3274.png"> <img width="30%" alt="Screenshot 2022-03-08 at 16 23 53" src="https://user-images.githubusercontent.com/70577898/157280951-3e1656e3-23c8-45e4-b540-359b84673550.png"> <img width="30%" alt="Screenshot 2022-03-08 at 16 24 06" src="https://user-images.githubusercontent.com/70577898/157280976-c4f7b053-7577-4b9c-a782-a713b5725931.png">
 
 ## Table of content
 - About the SPA
@@ -12,9 +12,9 @@
   * Avtivity Diagram
   * The API
 - Optimalisation
+- Client side vs server side rendering
 - How to install
 - How to use
-
 
 ##
 
@@ -36,16 +36,13 @@ Maybe you have a favourite designer and you only want to see the quotes they sai
 The two forms can not be combined when you are filtering. So you can use the subjects-form or the auhtors-form.
 
 
-
 ## Practical information
 ### Activity diagram
 <img width="1187" alt="Screenshot 2022-04-04 at 13 44 15" src="https://user-images.githubusercontent.com/70577898/161536923-870ea3e1-fa35-4477-883b-91559266869e.png">
 
 ### Service worker
 The service worker checks whether the user has an internet connection. When a request is made, the service worker stores the 'CORE_ASSETS' in the browser's cache memory 'v3'. The CORE_ASSETS contains the offline page and the styling file. This allows the service worker to still show the offline page with associated styling when there is no internet connection. <br><br>
-If there is internet connection, the service worker caches the rendered content in 'html cache'. If the user later returns to de SPA without internet, he can see still the pages he has already visited.
-
-#### How the service worker works
+If there is internet connection, the service worker caches the rendered content in 'html cache'. If the user later returns to de SPA without internet, he can see still the pages he has already visited.<br>
 <img width="1145" alt="Screenshot 2022-04-08 at 10 12 32" src="https://user-images.githubusercontent.com/70577898/162394341-4b67161b-6528-4325-9991-97123103c70d.png">
 
 ### The API
@@ -91,6 +88,12 @@ Now the loading is quite fast!<br>
  <img width="80%" alt="Performance Accessibility" src="https://user-images.githubusercontent.com/70577898/169288536-aa0610e7-de1d-4ad6-97c8-52a388b53cf2.png"><br>
  The mobile report is not at 100 on the performance topic. That is because of the image problem I described above.<br>
  <img width="80%" alt="Practices" src="https://user-images.githubusercontent.com/70577898/169288592-b6a84d31-724a-4f93-977f-7e0e20ac27d0.png"><br>
+
+
+## Client side vs Server side rendering
+### Client side rendering
+
+### Server side rendering
 
  ## How to install
 Firstly, make sure you have Git, Node and a working terminal on your computer. Secondly, if you do not use Github desktop yet, stop with what you are doing and download it now. I've spent to much time messing around in the terminal. So that is a little hint from me to you. 😄 <br> 
