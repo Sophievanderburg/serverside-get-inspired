@@ -74,12 +74,31 @@ Here is an example of what an object looks like:
 ```
 
 ### Optimalisation
-Things i used: 
+A tool to help you optimize your web app is Lighthouse. Lighthouse is implemented in the chrome browser. It generates a report of your website. In that rapport you get hints of how you can optimize your website. Lighthouse has 4 topics: SEO, Accessibility, Best practices & performance. <br>
+
+**SEO** stands for Search Engine Optimization. Good SEO help people find your website. META-tags for instance lets search engines know what your site is about. <br>
+Accessibility is also very important. A view examples of accessibility are: alt-text on images, button have text in them, HTML has a lang-attribute & headings in sequentially-descending order<br>
+
+**Accessibility** is also very important. A view examples of accessibility are: alt-text on images, button have text in them, HTML has a lang-attribute & headings in sequentially-descending order.<br>
+
+**Best practices** are things like: Uses HTTPS, Page has the HTML doctype, Avoids requesting the notification permission on page load & Avoids front-end JavaScript libraries with known security vulnerabilities<br>
+
+**Performance** is important for the loading speed of the page.
+I did a view things to help the performance go to 100 on desktop:
 * [express-minify package](https://www.npmjs.com/package/express-minify) 
 * [compression package](https://www.npmjs.com/package/compression)
 * SEO things like META-tags
 * `size=""` for images
 
+Now the loading is quite fast!<br>
+<img width="794" alt="Schermafbeelding 2022-05-19 om 13 47 17" src="https://user-images.githubusercontent.com/70577898/169288459-f3a9a19d-85f3-4046-bbc3-7a8b68bb6245.png"> <br>
+
  ❗ Lighthouse said that the images are on the bigger size. So I researched ways to make them smaller like `srcset=""` & `sizes=""`. But I can not use them, because the API does not support it. That is because the API has links from the image on another site. There is no way to make them smaller. That is why the performance is not 100.  
  
+ After a view modifications the desktop version are all on 100! <br>
+ <img width="80%" alt="Performance Accessibility" src="https://user-images.githubusercontent.com/70577898/169288536-aa0610e7-de1d-4ad6-97c8-52a388b53cf2.png"><br>
+ The mobile report is not at 100 on the performance topic. That is because of the image problem I described above.<br>
+ <img width="80%" alt="Practices" src="https://user-images.githubusercontent.com/70577898/169288592-b6a84d31-724a-4f93-977f-7e0e20ac27d0.png"><br>
+
  
+
