@@ -10,9 +10,10 @@
   * ❗ Disclaimer of the filter function
 - Practical information
   * Avtivity Diagram
-  * How to install
-  * How to use
   * The API
+- Optimalisation
+- How to install
+- How to use
 
 
 ##
@@ -47,15 +48,6 @@ If there is internet connection, the service worker caches the rendered content 
 #### How the service worker works
 <img width="1145" alt="Screenshot 2022-04-08 at 10 12 32" src="https://user-images.githubusercontent.com/70577898/162394341-4b67161b-6528-4325-9991-97123103c70d.png">
 
-### How to install
-Firstly, make sure you have Git, Node and a working terminal on your computer. Secondly, if you do not use Github desktop yet, stop with what you are doing and download it now. I've spent to much time messing around in the terminal. So that is a little hint from me to you. 😄 <br> 
-Now it is time for the code. If you are at the code-tab of this Github repo, you see a green button with the text 'code' in it. Click on that button and click on the option 'open with Github Desktop'. This way, it clones my repo on your computer. <br>
-Once you have the code on your computer open the terminal and install all the dependencies by running ``npm install``. If it <br>
-
-### How to Use
-Before you can see the SPA on your computer you need to start the server. You can do this by running ``npm run dev`` in the terminal. Once you've done this you can open http://localhost:4567/ in your browser.
-
-
 ### The API
 URL: https://quote.api.fdnd.nl/v1/quote <br>
 From the API I fetch the quotes that are rendered in the SPA
@@ -73,7 +65,7 @@ Here is an example of what an object looks like:
 "avatar":"<url to a picture of the author>"}
 ```
 
-### Optimalisation
+## Optimalisation
 A tool to help you optimize your web app is Lighthouse. Lighthouse is implemented in the chrome browser. It generates a report of your website. In that rapport you get hints of how you can optimize your website. Lighthouse has 4 topics: SEO, Accessibility, Best practices & performance. <br>
 
 **SEO** stands for Search Engine Optimization. Good SEO help people find your website. META-tags for instance lets search engines know what your site is about. <br>
@@ -100,5 +92,10 @@ Now the loading is quite fast!<br>
  The mobile report is not at 100 on the performance topic. That is because of the image problem I described above.<br>
  <img width="80%" alt="Practices" src="https://user-images.githubusercontent.com/70577898/169288592-b6a84d31-724a-4f93-977f-7e0e20ac27d0.png"><br>
 
- 
+ ## How to install
+Firstly, make sure you have Git, Node and a working terminal on your computer. Secondly, if you do not use Github desktop yet, stop with what you are doing and download it now. I've spent to much time messing around in the terminal. So that is a little hint from me to you. 😄 <br> 
+Now it is time for the code. If you are at the code-tab of this Github repo, you see a green button with the text 'code' in it. Click on that button and click on the option 'open with Github Desktop'. This way, it clones my repo on your computer. <br>
+Once you have the code on your computer open the terminal and install all the dependencies by running ``npm install``. If it <br>
 
+## How to Use
+Before you can see the SPA on your computer you need to start the server. You can do this by running ``npm run dev`` in the terminal. Once you've done this you can open http://localhost:4567/ in your browser.
