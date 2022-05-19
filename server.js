@@ -4,7 +4,7 @@ const compression = require('compression')
 const minify = require('express-minify');
 
 const app = express()
-const port = 4567
+const port = process.env.PORT || 4567
 
 // Link the templating engine to the express app
 app.set('view engine', 'ejs');
