@@ -96,6 +96,7 @@ Now the loading is quite fast!<br>
 With client side rendering, most content is rendered in the client's browser. The user receives an (almost) empty web page. This page is filled with content that renders with client-side javascript. If the user has a bad internet connection, it can take a very long time for all content to load. This is a major disadvantage of client side rendering
 
 ### Server side rendering
+With server side rendering, all rendering is done on the server. An advantage of server side rendering is that the user does not have to look long at a (half) empty page if the internet connection is not really fast. With server side rendering, the user receives the HTML-page from the server when it is completely filled with all fetched data from databases and/or APIs. Servers are super fast, so that will happen in milliseconds.
 
  ## How to install
 Firstly, make sure you have Git, Node and a working terminal on your computer. Secondly, if you do not use Github desktop yet, stop with what you are doing and download it now. I've spent to much time messing around in the terminal. So that is a little hint from me to you. 😄 <br> 
