@@ -10,6 +10,7 @@
   * ❗ Disclaimer of the filter function
 - Practical information
   * Avtivity Diagram
+  * Service worker
   * The API
 - Optimalisation
 - Client side vs server side rendering
@@ -65,8 +66,7 @@ Here is an example of what an object looks like:
 ## Optimalisation
 A tool to help you optimize your web app is Lighthouse. Lighthouse is implemented in the chrome browser. It generates a report of your website. In that rapport you get hints of how you can optimize your website. Lighthouse has 4 topics: SEO, Accessibility, Best practices & performance. <br>
 
-**SEO** stands for Search Engine Optimization. Good SEO help people find your website. META-tags for instance lets search engines know what your site is about. <br>
-Accessibility is also very important. A view examples of accessibility are: alt-text on images, button have text in them, HTML has a lang-attribute & headings in sequentially-descending order<br>
+**SEO** stands for Search Engine Optimization. Good SEO helps people find your website. This way more people will visit your website. META-tags, for instance, let search engines know what your site is about. If a person googles on a term that is in your META-tags, Google can send them to your web app.<br>
 
 **Accessibility** is also very important. A view examples of accessibility are: alt-text on images, button have text in them, HTML has a lang-attribute & headings in sequentially-descending order.<br>
 
